@@ -1,11 +1,11 @@
-package com.company.model.service;
+package com.company.service;
 
 import com.company.model.InputData;
 
 public class PrintingServiceImpl implements PrintingService {
 
     @Override
-    public void printInputData(InputData inputData) {
+    public void printInputDataInfo(InputData inputData) {
         StringBuilder msg = new StringBuilder(NEW_LINE);
         msg.append(MORTGAGE_AMOUNT).append(inputData.getAmount()).append(CURRENCY);
         msg.append(NEW_LINE);

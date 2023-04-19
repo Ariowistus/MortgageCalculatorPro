@@ -1,4 +1,4 @@
-package com.company.model.service;
+package com.company.service;
 
 import com.company.model.InputData;
 
@@ -20,5 +20,5 @@ public interface PrintingService {
         String CURRENCY = " PLN ";
         String NEW_LINE = "\n";
         String PERCENT = "% ";
-        void printInputData(final InputData inputData);
+        void printInputDataInfo(final InputData inputData);
 }
