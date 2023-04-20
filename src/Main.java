@@ -7,7 +7,12 @@ public class Main {
         InputData inputData = new InputData();
 
         PrintingService printingService = new PrintingServiceImpl();
-        RateCalculationService rateCalculationService = new RateCalculationServiceImpl();
+        RateCalculationService rateCalculationService = new RateCalculationServiceImpl(
+                new TimePointServiceImpl(),
+                new AmountsCalculationServiceImpl(),
+                new ResultCalculationServiceImpl()
+
+        );
 
         MortgageCalculationService mortgageCalculationService = new MortgageCalculationServiceImpl(printingService, rateCalculationService);
 
